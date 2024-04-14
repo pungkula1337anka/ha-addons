@@ -1,0 +1,1 @@
+  duck-tv: 'python duck-tv.py "{{ search }}" {{ typ }} {{ player }}'
