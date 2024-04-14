@@ -3,8 +3,6 @@
 
 <br><br>
 
-# Home Assistant Add-on: duck-TV
-# __duck-TV__
 <h1 align="center">
 <br>
  
@@ -29,14 +27,9 @@ Then if you have not already done so, please install and configure the official 
 Create one more domain on https://duckdns.org
 Fill in this domain and your duckdns auth key in the Add-on configuration.
 
-# __Full media control in one Python script.__ <br>
+# __Full media control With Assist__ <br>
 
-__UPDATED__ <br>
-I belive this script now __Plays__ all video codecs! and __ANY__ media files! __NO TRANSCODING NEEDED!?__ <br>
-Its very quick, and low power usage.<br> 
-_Let me know if I am wrong._ <br>
-<br>
-Python Media Controller utilizes the portability of Chromecast and the power of LibVLC to broadcast your local media to your devices. <br>
+duck-TV utilizes the portability of Chromecast and the power of LibVLC to broadcast your local media to your devices. <br>
 The difflib module is used to maximize your search potential and to create an __lightning fast__ "fuzzywuzzy" alike search effect, which can be clearvly used<br> 
 especially when spaking in a language other than your Assist pipeline defaults. <br>
 This allows for (most likely) calling an artists name or song title thats not in your native language. <br>
