@@ -1,12 +1,9 @@
 # Home Assistant Add-on: 🦆 **duck-TV** 📺
+<h1 align="center">
 <img src="https://github.com/pungkula1337anka/duck-TV/blob/main/ducktv.png?raw=true" width="200" height="200"  />
 
 <br><br>
 
-<h1 align="center">
-<br>
- 
-<img src="https://raw.githubusercontent.com/pungkula1337anka/Voice-Stuff/main/asset/pythonmedia.png">
 
 
 </h1><br>
