@@ -1,0 +1,7 @@
+---
+channel: dev
+addons:
+  duck-TV:
+    repository: pungkula1337anka/ha-addons/duck-TV
+    target: duck-TV
+    image: ghcr.io/einschmidt/caddy-2/{arch}
