@@ -1,6 +1,6 @@
 ---
 name: duck-TV
-version: stable
+version: latest
 slug: duck-TV
 description: Full media control by voice! Powered by DuckDNS & duck-TV!
 url: "https://github.com/pungkula1337anka/ha-addons/"
