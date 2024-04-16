@@ -1,7 +1,16 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Add-on: Qwackify
+# Home Assistant Add-on: duck-TV
+#!/bin/bash
+
+if [ "$ASSIST_LANGUAGE" = "sv" ]; then
+    cp -r /custom_sentences/sv/* /rootfs
+elif [ "$ASSIST_LANGUAGE" = "en" ]; then
+    cp -r /custom_sentences/en/* /rootfs
+else
+    echo "Unsupported assist_language value: $ASSIST_LANGUAGE"
+fi
 #
 # Launch Caddy
 # ------------------------------------------------------------------------------
