@@ -8,7 +8,16 @@
 
 </h1><br>
 
-<br><br><br>
+## What is duck-TV?
+
+duck-TV is a super easy way to power-up your Chromecast and give it voice controlling capabilities. <br>
+The duck-TV Addon can be used to control all kinds of media! <br>
+<br>
+🦆 Quack and play, no delay, <br>
+🗑️ Clicks and taps? A thing of the past, <br>
+🎙 Just speak up, and have a blast!
+<br>
+ 
 
 
 ## Installation
@@ -22,7 +31,10 @@ If you have trouble you can follow the [official docs](https://home-assistant.io
 Then if you have not already done so, please install and configure the official duckDNS add-on.  
 
 Create one more domain on https://duckdns.org
-Fill in this domain and your duckdns auth key in the Add-on configuration.
+Fill in this domain and your duckdns auth key in duck-TV's Add-On configuration.
+Dont forget to define your media folders aswell.
+Please configure all options to gain access to all features.
+
 
 # __Full media control With Assist__ <br>
 
@@ -30,12 +42,14 @@ duck-TV utilizes the portability of Chromecast and the power of LibVLC to broadc
 The difflib module is used to maximize your search potential and to create an __lightning fast__ "fuzzywuzzy" alike search effect, which can be clearvly used<br> 
 especially when spaking in a language other than your Assist pipeline defaults. <br>
 This allows for (most likely) calling an artists name or song title thats not in your native language. <br>
-Even if the STT generates the wrong word, the python script will still _(try to)_ point you to the right directory path.<br>
+Even if the STT generates the wrong word, the addon will still _(try to)_ point you to the right directory path.<br>
 A correction function is also implemented as fallback to ensure as high success rate as possible for your voice commands. <br>
 All search results are stored in temporary .m3u files when being sent to your media player to simplify the playback process as much as possible. <br><br>
-The python comes with custom sentence, combined these has every possible command you could ever think off,  to control your TV's or Media boxes. <br>
+The addon comes with custom sentences, combined these has every possible command you could ever think off,  to control your Android TV's or Media boxes. <br>
 <br>
-
+Due to Chromecast limitations a https domain is required to be able to stream. <br>
+duck-TV provides a [Caddy]() Reverse Proxy on your /media directory. <br>
+DuckDNS is used to dinamically update your IP adress. <br>
 <br>
 
 _Example usage:_
@@ -135,30 +149,23 @@ __Previous Track/Episode__  <br>
 ## 🦆 __getting started__ <br>
 
 
-- **1: Download the files** <br>
-Add the content of the files into your already existing files.<br>
-Make sure they are in the correct path. <br>
-LOoking for Reverse Proxy? Should be in `/share/caddy` <br>
-[Caddy official](https://caddyserver.com/download?package=github.com%2Fcaddy-dns%2Fduckdns)
+- **1: Add duck-TV Addon Repository** <br>
+Add this repository to your [Hass.io](https://home-assistant.io/hassio/) instance:
 
-- **2: Reverse Proxy Media Directory** <br>
-Running Chromecast like this requires TLS HTTPS and a domain. <br>
-If you are running Home Assistant OS and are not familiar with these kinds of network setups, I would reccomend <br>
-network mounting your media to `/media`. <br>
-And downloading the `Caddy 2` Reverse Proxy addon. [Add this repo](https://github.com/einschmidt/hassio-addons) <br>
-Register a couple duckdns domains and grab your API Key. <br>
-Place the files`caddy` and `Caddyfile` in your /share/caddy directory. <br>
-Define your `IP` and `duckdns domains` and `API key` in the `Caddyfile`. <br>
-Use the DuckDNS addon to dynamically update your IP to duckdns. <br>
-Congratulations, after restarting the addons your reverse proxy should be up and running. <br>
+`https://github.com/pungkula1337anka/ha-addons`
 
-- **3: Custom Sentences** <br>
-If you want to edit and use your own sentences you edit the `MediaController.yaml` file. <br>
+And install the duck-TV Addon.
 
-- **4: Python Script** <br>
-Edit the top section in `media_controller.py` to unlock all available features. <br>
-YouTube API Key can be created [here](https://developers.google.com/youtube/registering_an_application). You probably need to connect the key to a project aswell. <br>
-Dont forget to define your stuff _and .........._ <br>
+- **2: Install the official DuckDNS Addon** <br>
+Follow the DuckDNS official documentation.. <br>
+Make sure to create two domains on [DuckDNS](https://duckdns.org).
+
+- **3: Configure duck-TV Addon** <br>
+Define your new duckDNS domain & auth key in the `configuration` tab. <br>
+Make sure to set your media folders for all the different media types. <br>
+Setting your Assist language will automatically create a custom sentence yaml file for you. <br>
+__If you wish to edit this file to change how you trigger the different features of this Addon, <br>
+you can find the file in `/config/custom_sentences/<language_code>/duck-TV.yaml`.__
 
 __yay__ <br>
   - 🎉 _congratulations! 🎉 you can now control_ <br>
@@ -168,6 +175,10 @@ __yay__ <br>
 
 
 <br>
+## 🦆 __troubleshooting__ <br>
+
+
+- **More information will come, please be patient.** <br>
 
 
 <br><br>
