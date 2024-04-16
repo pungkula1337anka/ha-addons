@@ -16,25 +16,35 @@ The duck-TV Addon can be used to control all kinds of media! <br>
 🦆 Quack and play, no delay, <br>
 🗑️ Clicks and taps? A thing of the past, <br>
 🎙 Just speak up, and have a blast!
-<br>
+<br><br>
  
 
 
-## Installation
+## 🦆 __Installation__ <br>
 
-Add this repository to your [Hass.io](https://home-assistant.io/hassio/) instance:
+
+- **1: Add duck-TV Addon Repository** <br>
+Add this repository to your Home Assistant OS instance:
 
 `https://github.com/pungkula1337anka/ha-addons`
 
-If you have trouble you can follow the [official docs](https://home-assistant.io/hassio/installing_third_party_addons/).
+Then install the duck-TV Addon.<br><br>
 
-Then if you have not already done so, please install and configure the official duckDNS add-on.  
+- **2: Install the official DuckDNS Addon** <br>
+Follow the DuckDNS official documentation.. <br>
+Make sure to create two domains on [DuckDNS](https://duckdns.org). <br><br>
 
-Create one more domain on https://duckdns.org
-Fill in this domain and your duckdns auth key in duck-TV's Add-On configuration.
-Dont forget to define your media folders aswell.
-Please configure all options to gain access to all features.
+- **3: Configure duck-TV Addon** <br>
+Define your new duckDNS domain & auth key in the `configuration` tab. <br>
+Make sure to set your media folders for all the different media types. <br>
+Setting your Assist language will automatically create a custom sentence yaml file for you. <br>
+__If you wish to edit this file to change how you trigger the different features of this Addon, <br>
+you can find the file in `/config/custom_sentences/<language_code>/duck-TV.yaml`.__
 
+__yay__ <br>
+  - 🎉 _congratulations! 🎉 you can now control_ <br>
+    - _your media like a pro voice ninja!_  <br>
+<br><br>
 
 # __Full media control With Assist__ <br>
 
@@ -146,35 +156,8 @@ __Previous Track/Episode__  <br>
 <br>
 
 
-## 🦆 __getting started__ <br>
-
-
-- **1: Add duck-TV Addon Repository** <br>
-Add this repository to your [Hass.io](https://home-assistant.io/hassio/) instance:
-
-`https://github.com/pungkula1337anka/ha-addons`
-
-And install the duck-TV Addon.
-
-- **2: Install the official DuckDNS Addon** <br>
-Follow the DuckDNS official documentation.. <br>
-Make sure to create two domains on [DuckDNS](https://duckdns.org).
-
-- **3: Configure duck-TV Addon** <br>
-Define your new duckDNS domain & auth key in the `configuration` tab. <br>
-Make sure to set your media folders for all the different media types. <br>
-Setting your Assist language will automatically create a custom sentence yaml file for you. <br>
-__If you wish to edit this file to change how you trigger the different features of this Addon, <br>
-you can find the file in `/config/custom_sentences/<language_code>/duck-TV.yaml`.__
-
-__yay__ <br>
-  - 🎉 _congratulations! 🎉 you can now control_ <br>
-    - _your media like a pro voice ninja!_  <br>
-<br><br>
-
-
-
 <br>
+
 ## 🦆 __troubleshooting__ <br>
 
 
