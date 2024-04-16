@@ -43,4 +43,4 @@ schema:
 environment:
   LOG_FORMAT: "{LEVEL}: {MESSAGE}"
 init: false
-image: ghcr.io/einschmidt/caddy-2/{arch}
+image: ghcr.io/pungkula1337anka/duck-tv/{arch}
