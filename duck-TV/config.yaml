@@ -43,3 +43,4 @@ schema:
 environment:
   LOG_FORMAT: "{LEVEL}: {MESSAGE}"
 init: false
+image: ghcr.io/einschmidt/caddy-2/{arch}
