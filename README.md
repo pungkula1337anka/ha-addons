@@ -1,2 +1,2 @@
 # ha-addons
-Home Asssistant OS Add-on's
+🦆 pungkula's Home Asssistant OS Add-on repository.
