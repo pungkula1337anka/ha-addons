@@ -1,3 +1,4 @@
+# Dockerfile
 ARG BUILD_FROM
 # hadolint ignore=DL3006
 FROM $BUILD_FROM
@@ -32,17 +33,6 @@ RUN \
   && chmod +x /usr/bin/caddy \
   && rm -rf /tmp/caddy \
   && caddy version
-
-# Copy files based on assist_language variable
-ARG ASSIST_LANGUAGE
-RUN if [ "$ASSIST_LANGUAGE" = "sv" ]; then \
-        cp -r /custom_sentences/sv/* /rootfs; \
-    elif [ "$ASSIST_LANGUAGE" = "en" ]; then \
-        cp -r /custom_sentences/en/* /rootfs; \
-    else \
-        echo "Unsupported assist_language value: $ASSIST_LANGUAGE"; \
-    fi
-
 
 # Copy root filesystem
 COPY rootfs /
