@@ -15,6 +15,7 @@ RUN \
   && apk add --no-cache \
     nss-tools=3.98-r0
 
+
 # https://github.com/caddyserver/caddy/releases
 ENV CADDY_VERSION="v2.7.6"
 
@@ -36,6 +37,13 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+
+# Extract contents of caddy.tar.xz
+RUN set -eux \
+  \
+  && tar -xvf /etc/caddy/caddy.tar.xz -C /etc/caddy \
+  && rm -f /etc/caddy/caddy.tar.xz
+
 
 # ensure that nsswitch.conf is set up for Go's "netgo" implementation
 # - https://github.com/golang/go/blob/go1.19.3/src/net/conf.go#L227-L303
